@@ -20,7 +20,7 @@ All projects:
 
 **Classify Phone Apps Based on Text Descriptions (1hr assessment)**
 * **Tools used** tfidf vectorizer, NLP, Multinomial Naive Bayes Classifier
-* **Summary:** For a 1hr test used sklearn's tfidfvectorizer with basic stop words to get a sparse matrix which was then fed into a MultinomialNB classifier. 92% mean accuracy (of 5 runs) [solution](https://github.com/Brionnic/BKHardenstein_Portfolio/blob/master/src/final_assessment2.py) [explantion](https://github.com/Brionnic/BKHardenstein_Portfolio/blob/master/src/final_assessment2.txt)
+* **Summary:** For a 1hr test used sklearn's tfidfvectorizer with basic stop words to get a sparse matrix which was then fed into a MultinomialNB classifier. 92% mean accuracy (of 5 runs) [solution](https://github.com/Brionnic/BKHardenstein_Portfolio/blob/master/src/final_assessment2.py) / [explanation](https://github.com/Brionnic/BKHardenstein_Portfolio/blob/master/src/final_assessment2.txt)
 
 ### Individual Case Studies:
 
