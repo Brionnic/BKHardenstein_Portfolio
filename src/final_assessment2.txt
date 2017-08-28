@@ -1,0 +1,38 @@
+# Author:   Brian Hardenstein
+#           pixelatedbrian@gmail.com
+# xxxxxxxxx take home challenge
+
+Analysis of xxxxxxxxx Classification Challenge:
+
+The workflow for this problem is something like:
+
+ingest data -> vectorize data = matrix => fit a classifier on the matrix =>
+  predict new articles (after they're also vectorized)
+
+First Major Stage:
+because we're working with words we have to vectorize those words in order
+to be able to use them to build a classification model. In this case I chose to
+use SciKit Learn's TfidfVectorizer class. Ideally we would also do more
+preprocessing on the words to get better results. For example using stop words,
+lemmatization, and tokenizing.  (Because right now the vectorized words think
+of "sport" and "sports" as two distinct words which isn't necessarily true.)
+
+Second Major stage:
+Fitting a classification model to the resulting word vectors as well as using
+the labels provided. Model selection is a bit challenging. I was able to use a
+Multinomial Naive Bayes classifier.
+
+I also attempted to use a Gradient Boosting Classifier which with some hyperparameter
+tuning could also potentially do very well. However the GBC took too long to run
+and so I couldn't fully explore it's potential.
+
+In order to evaluate my models I did a train/test split using the SciKit Learn
+train_test_split method.  With this cross validation I was seeing scores of about
+92% accuracy with the MultinomialNB classifier.
+
+Some further improvements would be to get the Gradient Boosted Classifier tested
+and optimized to evaluate accuracy as well as potentially try some other classifiers
+such as Logistic Regression, and perhaps Random Forests.
+
+Another optimization would be threshold tuning because currently the model is using
+the default value (0.5). We can probably do better than this.
