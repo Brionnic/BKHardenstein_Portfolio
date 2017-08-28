@@ -33,6 +33,6 @@ All projects:
 * **Summary:** Inspired by a meetup presentation implemented home price regressor using Ames, Iowa dataset. Scraped additional data from Story County Assessor website (Ames’ county) to create new features and SQL to manipulate/store data.
 
 **DeepTraffic Neural Network (work in progress)**
-* **Tools used:** CNN, DNN, DeepQ, DeepLearn.js, regularization, [DeepTraffic](http://selfdrivingcars.mit.edu/deeptrafficjs/)
+* **Tools used:** CNN, DNN, DeepQ, DeepLearn.js, regularization, [DeepTraffic](http://selfdrivingcars.mit.edu/deeptrafficjs/), tanh/relu activation
 * **Summary:** MIT contest where a neural network has to learn how to navigate through video game-like traffic. (Think frogger) Evaluation is average speed (mph) on test sets mean of 10 runs.  Current highest 'score' is 57.5mph, 65mph is a passing grade for the MIT class. So more work is needed. :-)
 
